@@ -1,3 +1,144 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  list-style: none;
+}
 
+a {
+  text-decoration: none;
+}
+
+body {
+  font: 1em sans-serif;
+  background-color: #1D1D1D;
+}
+
+#navbar {
+  background: #181818;
+  position: fixed;
+  height: 100vh;
+  float: left;
+  color: white;
+}
+#navbar #logo {
+  font-size: 64px;
+  border-bottom: 3px solid #1D1D1D;
+}
+#navbar #logo a {
+  display: block;
+  padding: 5px;
+}
+#navbar li a {
+  display: block;
+  padding: 20px;
+  border-bottom: 3px solid #1D1D1D;
+  color: white;
+  transition: all 300ms;
+}
+#navbar li a:hover {
+  background: #1D1D1D;
+}
+
+.main-container {
+  width: 94vw;
+  float: right;
+}
+
+.section-container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+
+.button {
+  display: block;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+#home {
+  color: white;
+  text-align: center;
+  padding-top: 17vh;
+}
+#home .title {
+  margin-top: 60px;
+  padding: 20px;
+  margin-top: 50px;
+}
+#home .title h1 {
+  font-size: 72px;
+}
+#home .title .title-description {
+  font-size: 50px;
+}
+#home .button {
+  width: 200px;
+  font-size: 28px;
+  padding: 10px;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+
+.subtitle {
+  font-size: 48px;
+  padding: 30px;
+}
+
+#about {
+  text-align: center;
+  background-color: #2A2A2A;
+}
+#about .about-description {
+  margin: 0px auto;
+  display: block;
+  width: 60%;
+}
+#about .button {
+  width: 200px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0px auto;
+  margin-top: 50px;
+  border: 1px solid #ABABAB;
+}
+
+#projects {
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+  background-color: #2A2A2A;
+}
+#contact .form-input {
+  width: 500px;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px auto;
+  color: white;
+  background-color: #2A2A2A;
+  border: 1px solid #ABABAB;
+  outline: none;
+}
+#contact .button {
+  width: 150px;
+  font-size: 18px;
+  padding: 10px;
+  margin: 0px auto;
+  margin-top: 20px;
+  border: 1px solid #ABABAB;
+}
+#contact textarea {
+  max-width: 500px;
+  min-width: 500px;
+  min-height: 150px;
+  scrollbar-width: none;
+}
 
 /*# sourceMappingURL=styles.css.map */
