@@ -6,99 +6,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Freddy Michelena</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
 
-    <nav id="navbar">
+    <header class="header">
+        <nav id="navbar">
 
-        <div id="logo">
-            <a href="#home">Freddy Michelena</a>
-        </div>
+            <div class="navbar__mobile">
+                <a href="#home" class="logo">FM</a>
+                <div class="menu-btn-border">
+                    <span class="menu-btn material-icons" onclick="openMenuMobile()">menu</span>
+                </div>
+            </div>
+            
+            <div class="navbar__list-container">
+                <span class="close-btn material-icons" onclick="closeMenuMobile()">arrow_back</span>
+                <ul class="navbar__list">
+                    <li><a onclick="closeMenuMobile()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenuMobile()" href="#about">About</a></li>
+                    <li><a onclick="closeMenuMobile()" href="#projects">Projects</a></li>
+                    <li><a onclick="closeMenuMobile()" href="#contact">Contact</a></li>
+                    <li><a onclick="closeMenuMobile()" href="#">Download CV</a></li>
+                </ul>
+            </div>
+    
+        </nav>
 
-        <ul>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
+    </header>
 
     <main class="main-container">
 
         <!------- Home ------->
-        <!-- <section id="home" class="section-container">
-            
-            <div class="title">
-                <h1>Hi, My name is Freddy</h1>
-                <p class="title-description">I'm a self-taught web developer, Mechanical Engineer and a problem solving lover. </p>   
+        <section id="home" class="section-container">
+            <div class="container">
+                <div class="title">
+                    <h1>Hi, My name is <span>Freddy</span></h1>
+                    <p class="title-description">I'm a self-taught web developer, Mechanical Engineer and a problem solving lover</p>   
+                </div>
+                
+                <div class="btn-border">
+                    <a href="#about" class="btn">Know more</a>
+                </div>
+
             </div>
             
-            <a href="#projects" class="button">Know more</a>
-        
             
-        </section> -->
+        </section>
         <!------- Home - END ------->
 
-
         <!------- About me ------->
-        <!-- <section id="about" class="section-container">
-            <h2 class="subtitle">About me</h2>
+        <section id="about" class="section-container">
+            <h2 class="section-title">About me</h2>
 
-            <div class="about-description">
-                
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iusto recusandae doloremque aliquam laboriosam praesentium adipisci libero asperiores non eos error, quia facere illum sunt reprehenderit dicta explicabo modi quisquam distinctio, animi commodi? Assumenda, velit optio? Non molestias libero quasi impedit labore nisi perspiciatis rerum illum, ullam, maxime dolorum nobis delectus natus numquam possimus dolores atque unde et fuga? Fugit in aliquid iure temporibus asperiores. Dolorem exercitationem ipsum labore? Officia est nam culpa tenetur facere doloribus nulla ex ullam mollitia vitae eos id saepe ducimus provident, dicta consequuntur, sint dolorem optio maiores vel veniam nihil laboriosam laudantium! Iure, recusandae voluptates?
-                
+            <div class="description">
+                <p>My name is Freddy Michelena. I am a Mechanical Engineer from Venezuela who discovered that his passion is software and web development. </p>
+                <p>In my spare time I like to go mountain hikes, bike riding and take photos. But, I also like to be in continuous learning about the topics of my interest, such as web development.</p>
+                <p>At this time I have worked mostly with front-end technologies (mainly Angular), but I am interested in learning any other that allows me to continue growing.</p>
+                <p>I believe that the best tools and technologies are not the most sophisticated or the most popular, but rather those that help you solve the most complex problems. And that is what interests me in depth. Use programming to solve people's real problems.</p>
             </div>
 
-            <a href="#" class="button">Download CV</a>
-            
-
-        </section> -->
+            <div class="btn-border">
+                <a href="#contact" class="btn">Download CV</a>
+            </div>
+        </section>
         <!------- About me - END ------->
 
-        <!------- Projects ------->
-        <!-- <section id="projects" class="section-container">
-            <h2 class="subtitle">Projects</h2>
-    
+        <!-- <section id="tech" class="section-container">
+            <svg class="logo-sass" xmlns="http://www.w3.org/2000/svg" width="500" height="375" viewBox="0 0 512 384">
+                <path fill="#CF649A" d="M440.6 220.6c-17.9.101-33.4 4.4-46.4 10.801-4.8-9.5-9.6-17.801-10.399-24-.9-7.2-2-11.601-.9-20.2C384 178.6 389 166.4 389 165.4c-.101-.9-1.101-5.3-11.4-5.4s-19.2 2-20.2 4.7-3 8.9-4.3 15.3c-1.8 9.4-20.6 42.7-31.3 60.2-3.5-6.8-6.5-12.8-7.101-17.601-.899-7.199-2-11.6-.899-20.199 1.1-8.601 6.1-20.8 6.1-21.8-.1-.9-1.1-5.3-11.399-5.4-10.301-.1-19.2 2-20.2 4.7s-2.1 9.1-4.3 15.3C281.9 201.4 256.9 257 250.4 271.5c-3.3 7.4-6.199 13.3-8.3 17.3-2.1 4-.1.3-.3.7-1.8 3.4-2.8 5.3-2.8 5.3v.101c-1.4 2.5-2.9 4.899-3.601 4.899-.5 0-1.5-6.7.2-15.899 3.7-19.301 12.7-49.4 12.601-50.5 0-.5 1.699-5.801-5.801-8.5-7.3-2.7-9.899 1.8-10.5 1.8-.6 0-1.1 1.6-1.1 1.6s8.1-33.899-15.5-33.899c-14.8 0-35.2 16.1-45.3 30.8-6.4 3.5-20 10.899-34.4 18.8-5.5 3-11.2 6.2-16.6 9.1L117.9 251.9c-28.6-30.5-81.5-52.1-79.3-93.1.8-14.9 6-54.2 101.601-101.8 78.3-39 141-28.3 151.899-4.5 15.5 34-33.5 97.2-114.899 106.3-31 3.5-47.301-8.5-51.4-13-4.3-4.7-4.9-4.9-6.5-4-2.6 1.4-1 5.6 0 8.1 2.4 6.3 12.4 17.5 29.4 23.1 14.899 4.9 51.3 7.6 95.3-9.4 49.3-19.1 87.8-72.1 76.5-116.4-11.5-45.1-86.3-59.9-157-34.8C121.4 27.4 75.8 50.8 43 81.5 4 117.9-2.2 149.7.4 162.9c9.101 47.1 74 77.8 100 100.5-1.3.699-2.5 1.399-3.6 2-13 6.399-62.5 32.3-74.9 59.699-14 31 2.2 53.301 13 56.301 33.4 9.3 67.6-7.4 86.1-34.9 18.399-27.5 16.2-63.2 7.7-79.5l-.301-.6 10.2-6c6.601-3.9 13.101-7.5 18.8-10.601-3.199 8.7-5.5 19-6.699 34-1.4 17.601 5.8 40.4 15.3 49.4 4.2 3.899 9.2 4 12.3 4 11 0 16-9.101 21.5-20 6.8-13.3 12.8-28.7 12.8-28.7s-7.5 41.7 13 41.7c7.5 0 15-9.7 18.4-14.7v.1s.2-.3.6-1a36.13 36.13 0 0 0 1.2-1.899v-.2c3-5.2 9.7-17.1 19.7-36.8 12.899-25.4 25.3-57.2 25.3-57.2s1.2 7.8 4.9 20.6c2.199 7.601 6.999 15.9 10.699 24-3 4.2-4.8 6.601-4.8 6.601l.1.1c-2.399 3.2-5.1 6.601-7.899 10-10.2 12.2-22.4 26.101-24 30.101-1.9 4.699-1.5 8.199 2.2 11 2.7 2 7.5 2.399 12.6 2 9.2-.601 15.6-2.9 18.8-4.301 5-1.8 10.7-4.5 16.2-8.5 10-7.399 16.1-17.899 15.5-31.899-.3-7.7-2.8-15.3-5.9-22.5.9-1.3 1.801-2.601 2.7-4 15.8-23.101 28-48.5 28-48.5s1.2 7.8 4.9 20.6c1.899 6.5 5.7 13.601 9.1 20.601-14.8 12.1-24.1 26.1-27.3 35.3-5.9 17-1.3 24.7 7.4 26.5 3.899.8 9.5-1 13.699-2.8 5.2-1.7 11.5-4.601 17.301-8.9 10-7.4 19.6-17.7 19.1-31.6-.3-6.4-2-12.7-4.3-18.7 12.6-5.2 28.899-8.2 49.6-5.7 44.5 5.2 53.3 33 51.601 44.6-1.7 11.601-11 18-14.101 20-3.1 1.9-4.1 2.601-3.8 4 .4 2.101 1.8 2 4.5 1.601 3.7-.601 23.4-9.5 24.2-30.899 1.2-27.504-24.9-57.504-71.2-57.205zM97.4 336.3c-14.7 16.1-35.4 22.2-44.2 17-9.5-5.5-5.801-29.2 12.3-46.3 11-10.4 25.3-20 34.7-25.9 2.1-1.3 5.3-3.199 9.1-5.5.6-.399 1-.6 1-.6.7-.4 1.5-.9 2.3-1.4 6.7 24.4.3 45.8-15.2 62.7zm107.5-73.1c-5.1 12.5-15.9 44.6-22.4 42.8-5.601-1.5-9-25.8-1.101-49.8 4-12.101 12.5-26.5 17.5-32.101 8.101-9 16.9-12 19.101-8.3 2.6 4.801-9.9 39.601-13.1 47.401zm88.7 42.4c-2.2 1.101-4.2 1.9-5.1 1.301-.7-.4.899-1.9.899-1.9s11.1-11.9 15.5-17.4c2.5-3.199 5.5-6.899 8.7-11.1v1.2C313.6 292.1 299.8 301.7 293.6 305.6zm68.399-15.6c-1.6-1.2-1.399-4.9 4-16.5 2.101-4.6 6.9-12.3 15.2-19.6 1 3 1.601 5.899 1.5 8.6-.099 18-12.899 24.7-20.7 27.5z"/>
+            </svg>
+
         </section> -->
+
+        <!------- Projects ------->
+        <section id="projects" class="section-container">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="cards-container">
+                <a class="card" href="#">
+                    <h3 class="card-title">Discover Movie</h3>
+                    <svg class="card-icon-svg discover-movie" width="512pt" height="512pt" viewBox="-31 0 512 512"  xmlns="http://www.w3.org/2000/svg">
+                        <g fill-rule="evenodd">
+                            <path d="m440.589844 206.675781h-341.171875l327.699219-94.929687c2.546874-.738282 4.695312-2.460938 5.976562-4.78125 1.28125-2.324219 1.585938-5.058594.847656-7.605469l-17.148437-59.199219c-6.851563-23.644531-28.867188-40.160156-53.539063-40.160156-5.199218 0-10.378906.738281-15.402344 2.191406l-307.675781 89.128906c-14.230469 4.121094-26.023437 13.582032-33.214843 26.632813-7.1875 13.050781-8.875 28.078125-4.753907 42.304687l16.753907 57.835938v238.253906c0 30.6875 24.964843 55.652344 55.648437 55.652344h120.164063c5.523437 0 10-4.476562 10-10s-4.476563-10-10-10h-120.160157c-19.660156 0-35.652343-15.992188-35.652343-35.652344v-136.085937h51.230468.023438.019531 78.3125.023437.023438 78.3125.023438.023437 78.3125.023437.019532 105.28125v136.085937c0 19.660156-15.992188 35.652344-35.652344 35.652344h-120.164062c-5.519532 0-10 4.476562-10 10s4.480468 10 10 10h120.164062c30.6875 0 55.652344-24.964844 55.652344-55.652344v-239.671875c0-5.523437-4.476563-10-10-10zm-176.332032 93.585938 42.488282-73.585938h55.261718l-42.484374 73.585938zm-78.359374 0 42.488281-73.585938h55.261719l-42.484376 73.585938zm-78.355469 0 42.484375-73.585938h55.265625l-42.488281 73.585938zm37.179687-129.457031-71.148437-68.335938 53.308593-15.441406c.375.546875.8125 1.0625 1.3125 1.542968l71.148438 68.335938-53.308594 15.441406c-.375-.546875-.816406-1.066406-1.3125-1.542968zm134-125.839844 71.148438 68.335937-53.308594 15.441407c-.375-.546876-.8125-1.066407-1.3125-1.542969l-71.148438-68.335938 53.308594-15.441406c.375.546875.8125 1.0625 1.3125 1.542969zm-75.265625 21.804687 71.148438 68.332031-53.308594 15.445313c-.375-.546875-.8125-1.066406-1.3125-1.542969l-71.148437-68.335937 53.308593-15.441407c.378907.542969.816407 1.0625 1.3125 1.542969zm149.960938-45.367187c3.210937-.929688 6.519531-1.402344 9.835937-1.402344 15.824219 0 29.9375 10.578125 34.328125 25.726562l14.367188 49.589844-40.121094 11.621094c-.378906-.546875-.816406-1.0625-1.316406-1.542969l-71.144531-68.332031zm-328.9375 106.199218c4.609375-8.371093 12.160156-14.433593 21.261719-17.070312l5.875-1.703125c.378906.546875.816406 1.066406 1.3125 1.542969l71.148437 68.335937-88.292969 25.578125-14.367187-49.589844c-2.636719-9.097656-1.546875-18.71875 3.0625-27.09375zm14.480469 99.074219h87.972656l-42.484375 73.585938h-45.488281zm303.65625 73.585938 42.484374-73.585938h45.488282v73.585938zm0 0"/>
+                            <path d="m303.921875 405.113281c0-3.574219-1.90625-6.875-5-8.660156l-87.855469-50.722656c-3.09375-1.785157-6.90625-1.785157-10 0-3.09375 1.785156-5 5.085937-5 8.660156v101.445313c0 3.570312 1.90625 6.871093 5 8.65625 1.546875.894531 3.273438 1.34375 5 1.34375 1.726563 0 3.453125-.449219 5-1.34375l87.855469-50.71875c3.09375-1.785157 5-5.085938 5-8.660157zm-87.855469 33.402344v-66.804687l57.855469 33.402343zm0 0"/><path d="m234.773438 492c-5.507813 0-10 4.492188-10 10s4.492187 10 10 10c5.511718 0 10-4.492188 10-10s-4.488282-10-10-10zm0 0"/>
+                        </g>
+                        <defs>
+                            <linearGradient id="card-icon-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                              <stop offset="0%" style="stop-color:red;stop-opacity:1" />
+                              <stop offset="100%" style="stop-color:purple;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <p class="card-description">Search engine for movies and TV shows</p>
+
+                    <span class="card-overlay">
+                        <h3 class="card-title">Discover Movie</h3>
+                        <span class="button">View project</span>
+                        <p class="card-description">Search engine for movies and TV shows</p>
+                    </span>
+                </a>
+
+                <a class="card" href="#">
+                    <h3 class="card-title">Marvel Clon</h3>
+                    <svg class="card-icon-svg marvel-clon" xmlns="http://www.w3.org/2000/svg" width="2500" height="1000" viewBox="0 0 500 200">
+                        <path class="marvel-bg" fill="#f0141e" d="M0 0h500v200H0z"/>
+                        <path class="marvel-text" d="M423.12 46.619V15.991h-85.706l-14.11 102.282-13.94-102.282h-30.908l3.454 27.312c-3.563-7-16.211-27.312-44.061-27.312-.185-.012-30.945 0-30.945 0l-.128 149.084-22.523-149.084-40.484-.012-23.304 154.467.013-154.455H81.726l-13.965 86.768-13.604-86.768H15.399v167.932h30.523v-80.944l13.886 80.944h16.224l13.69-80.944v80.944h58.838l3.558-25.83h23.688l3.558 25.83 57.771.037h.042v-.037H237.249v-54.504l7.074-1.024 14.661 55.565h29.883l-.012-.037H288.94l-19.238-65.11c9.741-7.179 20.752-25.379 17.822-42.798v-.006c.036.226 18.164 108.026 18.164 108.026l35.534-.11 24.279-152.203v152.203h57.617v-30.199h-27.344v-38.507h27.344v-30.66h-27.344v-37.94h27.346zM155.713 131.47l8.387-71.802 8.69 71.802h-17.077zm88.708-33.155c-2.344 1.123-4.784 1.685-7.172 1.691v-54.01c.037 0 .093-.006.153-.006 2.38-.018 20.203.714 20.203 26.709 0 13.598-6.06 22.174-13.184 25.616zm240.186 55.383v30.188h-56.214V15.967h30.272v137.731h25.942z" fill="#fff"/>
+                    </svg>
+                    <p class="card-description">Marvel's homepage static clon</p>
+
+                    <span class="card-overlay">
+                        <h3 class="card-title">Marvel Clon</h3>
+                        <span class="button">View project</span>
+                        <p class="card-description">Marvel's homepage static clon</p>
+                    </span>
+                </a>
+
+            </div>
+        </section>
         <!------- Projects - END ------->
 
         <!------- Contact ------->
-        <!-- <section id="contact" class="section-container">
-            <h2 class="subtitle">Contact</h2>
+        <section id="contact" class="section-container">
+            <h2 class="section-title">Contact</h2>
 
-            <form action="">
+            <p class="section-description">
+                If you want to get it touch with me, you can send me a message to my 
+                <a href="https://www.linkedin.com/in/freddy-michelena-057426102/" target="_blank">LinkedIn</a> 
+                profile or you can simple use the next form.
+            </p>
 
-                <input name="name" class="form-input" type="text" placeholder="Name" required>
-                <br>
-                <input class="form-input" type="email" placeholder="Email" required>
-                <br>
-                <textarea class="form-input" type="text" placeholder="Write your message..." required></textarea>
+            <form class="form">
+                
+                <!-- Name -->
+                <div class="input-container">
+                    <label class="form-label" for="form_name">Name</label>
+                    <input id="form_name"
+                        class="form-input" 
+                        type="text" 
+                        minlength="3"
+                        required>
+                    
+                </div>
+                <!-- Name - End -->
 
-                <button type="submit" class="button">Send</button>
+                <!-- Email -->
+                <div class="input-container">
+                    <label class="form-label" for="form_email">Email</label>
+                    <input id="form_email"
+                        class="form-input" 
+                        type="email" 
+                        minlength="8"
+                        required>
+                    
+                </div>
+                <!-- Email - End -->
+
+                <!-- Message -->
+                <div class="input-container">
+                    <label class="form-label" for="form_message">Message</label>
+                    <textarea id="form_message"
+                        class="form-input" 
+                        type="text" 
+                        minlength="10"
+                        required>
+                    </textarea>
+                    
+                </div>
+                <!-- Message - End -->
+
+                <div class="btn-border">
+                    <button class="btn" type="submit">Send message</button>
+                </div>
 
             </form>
-        </section> -->
+
+        </section>
         <!------- Contact - END ------->
-
-
+        
     </main>
 
 
+    <footer class="footer">
+        <h4>&copy; Freddy Michelena</h4>
+        <p>2021</p>
+    </footer>
 
- 
-    
-    
-    
-    
-    
-    
     <!-- Scrips -->
+    <script src="js/main.js"></script>
 </body>
 </html>
