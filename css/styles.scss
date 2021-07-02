@@ -1,6 +1,11 @@
 @import 'base';
 
 // Header - Start
+#navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .navbar__mobile {
     width: 100%;
     display: inline-flex;
@@ -81,6 +86,10 @@
         }
     }
 }
+
+.navbar__desktop {
+    display: none;
+}
 // Header - End
 
 .main-container {
@@ -91,6 +100,8 @@
     @include flex-center;
     background-color: $primary-bg-color;
     padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1000px;
 
     .section-title {
         margin-top: $mobile-header-height;
@@ -150,8 +161,10 @@
 }
 
 #about {
-    min-height: calc(100vh - #{$mobile-header-height});
-    padding: 30px;
+    // min-height: calc(100vh - #{$mobile-header-height});
+    padding: 30px 30px 70px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+
 
     .description {
         font-size: 16px;
@@ -192,10 +205,13 @@
 }
 
 #projects {
+    width: 100%;
 
     .cards-container {
-        @include flex-center;
         width: 100%;
+        display: grid;
+        grid-row-gap: 30px;
+        grid-template-columns: 100%;
     }
 
     .card {
@@ -209,7 +225,6 @@
         cursor: pointer;
         position: relative;
         padding: 20px;
-        margin: 0 0 30px;
 
         .card-title {
             position: absolute;
@@ -291,6 +306,7 @@
     .form {
         @include flex-center;
         width: 100%;
+        max-width: 720px;
         margin: 0 0 75px;
 
         .input-container {
@@ -356,9 +372,8 @@
     
 }
 
-
 .footer {
-    background-color: #111111;
+    background-color: $footer-bg-color;
     padding: 30px;
     text-align: center;
 
@@ -367,6 +382,134 @@
     }
 }
 
+.decoration {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+
+    svg {
+        
+        path {
+            fill: url(#card-icon-gradient);
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    
+    .navbar__mobile,
+    .navbar__list-container {
+        display: none;
+    }
+
+    .navbar__desktop {
+        @include flex-center;
+        flex-direction: row;
+        justify-content: space-between;
+        height: $desktop-header-height;
+
+        .logo-border {
+            @include button-border;
+            margin-left: 20px;
+        }
+
+        .logo {
+            @include button-inner;
+            background-color: $primary-bg-color;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .navbar__list {
+            @include flex-center;
+            flex-direction: row;
+
+            li {
+                font-size: $desktop-navbar-text-size;
+                padding: 5px;
+                margin: 10px;
+                letter-spacing: 1px;
+                position: relative;
+                cursor: pointer;
+                
+                &:last-child {
+                    margin-right: 12px;
+                }
+
+                a {
+                    color: $primary-p-color;
+                    transition: all 200ms ease-in-out;
+                }
+
+                &:hover > a {
+                    color: $primary-title-color;
+                }
+                
+                
+                
+
+            }
+        }
+    }
+
+    .section-container {
+        padding: 0 40px;
+    }
+
+    #home {
+        .title {
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                max-width: 800px;
+                font-size: 2rem;
+            }
+        }
+
+        .btn {
+            font-size: 20px;
+        }
+    }
+
+    #about {
+        padding: 30px 45px 70px;
+
+        p {
+            font-size: 18px;
+        }
+
+        .btn {
+            font-size: 18px;
+        }
+    }
+
+    #projects {
+        .cards-container {
+            box-sizing: border-box;
+            justify-content: space-between;
+            grid-template-columns: 48% 48%;
+         
+        }
+    }
+    
+    #contact {
+        .section-description {
+            font-size: 18px;
+        }
+    }
+        
+
+
+}
+
+@media (min-width: 1000px) {
+    .navbar__desktop {
+        padding: 0 30px; 
+    }
+}
 
 /*
     Mobile: 360 x 640.

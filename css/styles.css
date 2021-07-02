@@ -25,6 +25,11 @@ p {
   color: #6f6f6f;
 }
 
+#navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .navbar__mobile {
   width: 100%;
   display: inline-flex;
@@ -75,7 +80,7 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  background: #111111;
+  background: #202020;
   transition: all 200ms;
   transform: translateX(-100%);
   z-index: 99;
@@ -108,6 +113,10 @@ p {
   letter-spacing: 2px;
 }
 
+.navbar__desktop {
+  display: none;
+}
+
 .main-container {
   margin: 60px 0 0;
 }
@@ -119,6 +128,8 @@ p {
   flex-direction: column;
   background-color: #040402;
   padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 .section-container .section-title {
   margin-top: 60px;
@@ -182,8 +193,8 @@ p {
 }
 
 #about {
-  min-height: calc(100vh - 60px);
-  padding: 30px;
+  padding: 30px 30px 70px;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 #about .description {
   font-size: 16px;
@@ -228,12 +239,14 @@ p {
   fill: #f0f0f0;
 }
 
-#projects .cards-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+#projects {
   width: 100%;
+}
+#projects .cards-container {
+  width: 100%;
+  display: grid;
+  grid-row-gap: 30px;
+  grid-template-columns: 100%;
 }
 #projects .card {
   display: block;
@@ -243,13 +256,12 @@ p {
   flex-direction: column;
   width: 100%;
   min-height: 400px;
-  background-color: #111111;
+  background-color: #202020;
   border-radius: 5px;
   box-shadow: 5px 5px 5px #040402;
   cursor: pointer;
   position: relative;
   padding: 20px;
-  margin: 0 0 30px;
 }
 #projects .card .card-title {
   position: absolute;
@@ -271,7 +283,7 @@ p {
   fill: url(#card-icon-gradient);
 }
 #projects .card .card-icon-svg.marvel-clon .marvel-text {
-  fill: #111111;
+  fill: #202020;
 }
 #projects .card .card-description {
   position: absolute;
@@ -322,6 +334,7 @@ p {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  max-width: 720px;
   margin: 0 0 75px;
 }
 #contact .form .input-container {
@@ -332,7 +345,7 @@ p {
   width: 100%;
   margin: 0 auto 10px;
   padding: 30px 15px 15px;
-  background-color: #111111;
+  background-color: #202020;
   border: none;
   font-size: 18px;
   border-radius: 5px;
@@ -388,7 +401,7 @@ p {
 }
 
 .footer {
-  background-color: #111111;
+  background-color: #202020;
   padding: 30px;
   text-align: center;
 }
@@ -396,6 +409,117 @@ p {
   margin: 0 auto 5px;
 }
 
+.decoration {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.decoration svg path {
+  fill: url(#card-icon-gradient);
+}
+
+@media (min-width: 768px) {
+  .navbar__mobile,
+.navbar__list-container {
+    display: none;
+  }
+
+  .navbar__desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+  }
+  .navbar__desktop .logo-border {
+    background: linear-gradient(to right, red, purple);
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    margin-left: 20px;
+  }
+  .navbar__desktop .logo-border:hover {
+    box-shadow: 0px 0px 6px red;
+  }
+  .navbar__desktop .logo {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-color: #040402;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .navbar__desktop .navbar__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: row;
+  }
+  .navbar__desktop .navbar__list li {
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+    letter-spacing: 1px;
+    position: relative;
+    cursor: pointer;
+  }
+  .navbar__desktop .navbar__list li:last-child {
+    margin-right: 12px;
+  }
+  .navbar__desktop .navbar__list li a {
+    color: #6f6f6f;
+    transition: all 200ms ease-in-out;
+  }
+  .navbar__desktop .navbar__list li:hover > a {
+    color: #f0f0f0;
+  }
+
+  .section-container {
+    padding: 0 40px;
+  }
+
+  #home .title h1 {
+    font-size: 4rem;
+  }
+  #home .title p {
+    max-width: 800px;
+    font-size: 2rem;
+  }
+  #home .btn {
+    font-size: 20px;
+  }
+
+  #about {
+    padding: 30px 45px 70px;
+  }
+  #about p {
+    font-size: 18px;
+  }
+  #about .btn {
+    font-size: 18px;
+  }
+
+  #projects .cards-container {
+    box-sizing: border-box;
+    justify-content: space-between;
+    grid-template-columns: 48% 48%;
+  }
+
+  #contact .section-description {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1000px) {
+  .navbar__desktop {
+    padding: 0 30px;
+  }
+}
 /*
     Mobile: 360 x 640.
     Mobile: 375 x 667.

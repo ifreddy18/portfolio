@@ -24,9 +24,14 @@ $primary-p-color: #6f6f6f;
 
 // Background color
 $primary-bg-color: #040402;
-$secondary-bg-color: #111111;
-$card-bg-color: #111111;
-$input-bg-color: #111111;
+// $secondary-bg-color: #111111;
+// $card-bg-color: #111111;
+// $input-bg-color: #111111;
+// $footer-bg-color: #111111;
+$secondary-bg-color: #202020;
+$card-bg-color: #202020;
+$input-bg-color: #202020;
+$footer-bg-color: #202020;
 
 // Icon color
 $primary-icon-color: #f0f0f0;
@@ -59,6 +64,11 @@ $card-title-size: 1.5rem;
 
 
 $mobile-header-height: 60px;
+$desktop-header-height: 80px;
+
+$desktop-navbar-text-size: 20px;
+
+
 
 
 * {
