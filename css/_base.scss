@@ -120,7 +120,7 @@ p {
     @include button;
     border-radius: 5px;
     letter-spacing: 1px;
-
+    background-color: $primary-bg-color;
 }
 
 @mixin flex-center {

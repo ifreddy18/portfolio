@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Freddy Michelena | Discover Movie</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+
+    <header class="header">
+        <nav id="navbar">
+
+            <div class="navbar__mobile">
+                <a href="/" class="logo">FM</a>
+                <div class="menu-btn-border">
+                    <span class="menu-btn material-icons" onclick="openMenuMobile()">menu</span>
+                </div>
+            </div>
+            
+            <div class="navbar__list-container">
+                <span class="close-btn material-icons" onclick="closeMenuMobile()">arrow_back</span>
+                <ul class="navbar__list">
+                    <li><a onclick="closeMenuMobile()" href="/#home">Home</a></li>
+                    <li><a onclick="closeMenuMobile()" href="/#about">About</a></li>
+                    <li><a onclick="closeMenuMobile()" href="/#projects">Projects</a></li>
+                    <li><a onclick="closeMenuMobile()" href="/#contact">Contact</a></li>
+                    <li><a onclick="closeMenuMobile()" href="/#home">Download CV</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar__desktop">
+                <div class="logo-border">
+                    <span class="logo">Freddy Michelena</span>
+                </div>
+                <ul class="navbar__list">
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/#projects">Projects</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                    <li><a href="/#">Download CV</a></li>
+                </ul>
+            </div>
+    
+        </nav>
+
+    </header>
+
+    <main class="main-container-project">
+
+        <h1 class="project-title">Discover Movie</h1>
+
+
+        <div class="slideshow-container">
+            <div class="modal-bg">
+                <div class="modal-content">
+                    <span onclick="closeModal()" class="close-btn">&times;</span>
+                    <img class="modal-img" src="../assets/img-projects/discover-movie_1.png" alt="">
+                </div>
+            </div>
+            <div class="slideshow">
+                <img onclick="openModal('discover-movie_1.png')" class="slide" src="../assets/img-projects/discover-movie_1.png" alt="Discover Movie Screenshot">
+                <img onclick="openModal('marvel-clon_1.png')" class="slide" src="../assets/img-projects/marvel-clon_1.png" alt="Discover Movie Screenshot">
+                <img onclick="openModal('marvel-clon_2.png')" class="slide" src="../assets/img-projects/marvel-clon_2.png" alt="Discover Movie Screenshot">
+                <img onclick="openModal('marvel-clon_3.png')" class="slide" src="../assets/img-projects/marvel-clon_3.png" alt="Discover Movie Screenshot">
+                <img onclick="openModal('marvel-clon_4.png')" class="slide" src="../assets/img-projects/marvel-clon_4.png" alt="Discover Movie Screenshot">
+                <span onclick="changeSlide(1)" class="arrow-next"></span>
+                <span onclick="changeSlide(-1)" class="arrow-prev"></span>
+            </div>
+            <div class="dots-container">
+                <span onclick="selectSlide(0)" class="dot"></span>
+                <span onclick="selectSlide(1)" class="dot"></span>
+                <span onclick="selectSlide(2)" class="dot"></span>
+                <span onclick="selectSlide(3)" class="dot"></span>
+                <span onclick="selectSlide(4)" class="dot"></span>
+            </div>
+        </div>
+
+        <section class="project-description project-section">
+            <h2>Project description</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores necessitatibus corporis eveniet obcaecati laboriosam earum quas deleniti. Adipisci libero deserunt repellat quaerat, facilis inventore voluptatum debitis eveniet dicta laborum temporibus sequi hic doloremque ea voluptas quos ex odio molestias sint voluptate dolore perspiciatis voluptatem minus totam. Repudiandae commodi corrupti aliquid.
+            </p>
+        </section>
+
+        <div class="decoration">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="474.232px" height="25.75px" viewBox="0 0 474.232 25.75" enable-background="new 0 0 474.232 25.75" xml:space="preserve">
+                <path id="XMLID_363_" fill="#231F20" d="M4.934,9.551c2.536,0,4.621-1.851,4.9-4.233h21.685L47.833,21.11h99.75l12.183-11.793
+                        h270.37l12.604,12.2h21.658c0.279,2.381,2.365,4.234,4.898,4.234c2.727,0,4.936-2.139,4.936-4.776c0-2.638-2.209-4.776-4.936-4.776
+                        c-2.533,0-4.619,1.851-4.898,4.233h-21.195L430.6,8.232H159.303L147.12,20.025H48.297L31.982,4.233H9.833
+                        C9.555,1.852,7.469,0,4.934,0C2.209,0,0,2.138,0,4.775C0,7.414,2.209,9.551,4.934,9.551z"/>
+                <defs>
+                    <linearGradient id="card-icon-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:red;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:purple;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+
+        <section class="tech-stack project-section">
+            <h2>Tech stack</h2>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>HTML</h3>
+                    <img class="tech-logo" src="../assets/logos/html5.svg" alt="html-logo">
+                </div>
+                <div class="grid-item">
+                    <h3>CSS</h3>
+                    <img class="tech-logo" src="../assets/logos/css3.svg" alt="css3-logo">
+                </div>
+                <div class="grid-item">
+                    <h3>Bootstrap</h3>
+                    <img class="tech-logo" src="../assets/logos/bootstrap.svg" alt="bootstrap-logo">
+                </div>
+                <div class="grid-item">
+                    <h3>TypeScript</h3>
+                    <img class="tech-logo" src="../assets/logos/typescript.svg" alt="TypeScript-logo">
+                </div>
+                <div class="grid-item">
+                    <h3>Angular</h3>
+                    <img class="tech-logo" src="../assets/logos/angular.svg" alt="Angular-logo">
+                </div>
+                <div class="grid-item">
+                    <h3>Firebase</h3>
+                    <img class="tech-logo" src="../assets/logos/firebase.svg" alt="Firebase-logo">
+                </div>
+            </div>
+
+            <h2>Other technologies</h2>
+                <ul>
+                    <li>
+                        <a href="https://swiperjs.com/">Swiper.js</a>
+                    </li>
+                </ul>
+                
+        </section>
+
+     
+        <div class="buttons-container">
+            <div class="btn-border">
+                <a href="#about" class="btn">View Code</a>
+            </div>
+            <div class="btn-border">
+                <a href="#about" class="btn">View Live</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <h4>&copy; <span>2021</span> Freddy Michelena</h4>
+    </footer>
+
+    <!-- Scrips -->
+    <script src="../js/main.js"></script>
+    <script src="../js/projects.js"></script>
+    <script src="../js/modal.js"></script>
+
+</body>
+</html>
