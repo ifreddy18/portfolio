@@ -109,6 +109,10 @@
 }
 
 @media (min-width: 768px) {
+
+    .main-container {
+        margin: 0 auto;
+    }
     
     .navbar__mobile,
     .navbar__list-container {

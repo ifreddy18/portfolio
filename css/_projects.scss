@@ -39,10 +39,12 @@ $max-width: 800px;
     }
 
     .modal-content {
+        @include flex-center;
         z-index: -1;
         opacity: 0;
         transform: scale(0);
         transition: 300ms ease-in;
+        // padding-top: 50px;
 
         &.active {
             z-index: 99;
@@ -51,7 +53,8 @@ $max-width: 800px;
         }
 
         .modal-img {
-            width: 100%;
+            max-height: 90vh;
+            max-width: 90vw;
         }
 
         .close-btn {
@@ -59,8 +62,8 @@ $max-width: 800px;
             position: absolute;
             font-size: 48px;
             cursor: pointer;
-            top: -50px;
-            right: 30px;
+            top: -40px;
+            right: 0;
         }
     }
 }
@@ -69,14 +72,15 @@ $max-width: 800px;
     width: 100%;
     max-width: $max-width;
     height: 50vw;
-    max-height: 420px;
+    max-height: 450px;
     position: relative;
+    text-align: center;
 
     .slide {
-        width: 100%;
         position: absolute;
+        height: 100%;
         top: 0;
-        left: 0;
+        left: 50%;
         opacity: 0;
         transition: all 400ms ease-in-out;
         cursor: pointer;
@@ -84,17 +88,19 @@ $max-width: 800px;
 
         &.active {
             opacity: 1;
-            transform: translateX(0);
+            transform: translateX(-50%);
             z-index: 10;
         }
     
         &.toRight {
-            transform: translateX(15%);
+            transform: translateX(calc(15% - 50%));
         }
         
         &.toLeft {
-            transform: translateX(-15%);
+            transform: translateX(calc(-15% - 50%));
         }
+
+
     }
 
     .arrow-prev,
@@ -156,6 +162,11 @@ $max-width: 800px;
         margin-bottom: 20px;
     }
 
+    p {
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
 }
 
 .tech-stack {
@@ -185,7 +196,7 @@ $max-width: 800px;
 
     li {
         position: relative;
-        margin-left: 20px;
+        margin: 0 0 10px 20px;
 
         &::before {
             content: "";
