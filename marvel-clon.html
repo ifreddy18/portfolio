@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Freddy Michelena | Discover Movie</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <base href="/">
 </head>
 <body>
 
@@ -17,7 +18,7 @@
         <nav id="navbar">
 
             <div class="navbar__mobile">
-                <a href="" class="logo">FM</a>
+                <a href="#home" class="logo">FM</a>
                 <div class="menu-btn-border">
                     <span class="menu-btn material-icons" onclick="openMenuMobile()">menu</span>
                 </div>
@@ -26,7 +27,7 @@
             <div class="navbar__list-container">
                 <span class="close-btn material-icons" onclick="closeMenuMobile()">arrow_back</span>
                 <ul class="navbar__list">
-                    <li><a onclick="closeMenuMobile()" href="">Home</a></li>
+                    <li><a onclick="closeMenuMobile()" href="#home">Home</a></li>
                     <li><a onclick="closeMenuMobile()" href="#about">About</a></li>
                     <li><a onclick="closeMenuMobile()" href="#projects">Projects</a></li>
                     <li><a onclick="closeMenuMobile()" href="#contact">Contact</a></li>
@@ -36,7 +37,7 @@
 
             <div class="navbar__desktop">
                 <div class="logo-border">
-                    <a href="" class="logo">Freddy Michelena</a>
+                    <a href="#home" class="logo">Freddy Michelena</a>
                 </div>
                 <ul class="navbar__list">
                     <li><a href="#about">About</a></li>
