@@ -4,7 +4,7 @@ var modalImg = document.querySelector('.modal-img');
 
 function openModal(imgName) {
     console.log(imgName);
-    modalImg.setAttribute('src',`../assets/img-projects/${imgName}`);
+    modalImg.setAttribute('src',`assets/img-projects/${imgName}`);
     modal.classList.add('active');
     modalContent.classList.add('active');
 }
