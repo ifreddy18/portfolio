@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <base href="https://ifreddy18.github.io/portfolio/">
 </head>
 <body>
 
@@ -27,23 +26,23 @@
             <div class="navbar__list-container">
                 <span class="close-btn material-icons" onclick="closeMenuMobile()">arrow_back</span>
                 <ul class="navbar__list">
-                    <li><a onclick="closeMenuMobile()" href="/">Home</a></li>
-                    <li><a onclick="closeMenuMobile()" href="/#about">About</a></li>
-                    <li><a onclick="closeMenuMobile()" href="/#projects">Projects</a></li>
-                    <li><a onclick="closeMenuMobile()" href="/#contact">Contact</a></li>
-                    <li><a onclick="closeMenuMobile()" href="/#home">Download CV</a></li>
+                    <li><a onclick="closeMenuMobile()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenuMobile()" href="#about">About</a></li>
+                    <li><a onclick="closeMenuMobile()" href="#projects">Projects</a></li>
+                    <li><a onclick="closeMenuMobile()" href="#contact">Contact</a></li>
+                    <li><a onclick="closeMenuMobile()" href="#home">Download CV</a></li>
                 </ul>
             </div>
 
             <div class="navbar__desktop">
                 <div class="logo-border">
-                    <a href="/" class="logo">Freddy Michelena</a>
+                    <a href="" class="logo">Freddy Michelena</a>
                 </div>
                 <ul class="navbar__list">
-                    <li><a href="/#about">About</a></li>
-                    <li><a href="/#projects">Projects</a></li>
-                    <li><a href="/#contact">Contact</a></li>
-                    <li><a href="/#">Download CV</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Download CV</a></li>
                 </ul>
             </div>
     
@@ -53,25 +52,23 @@
 
     <main class="main-container-project">
 
-        <h1 class="project-title">Marvel Clon</h1>
+        <h1 class="project-title">Discover Movie</h1>
 
 
         <div class="slideshow-container">
             <div class="modal-bg" onclick="closeModal()">
                 <div class="modal-content">
                     <span onclick="closeModal()" class="close-btn">&times;</span>
-                    <img class="modal-img" src="../assets/img-projects/marvel-clon_1.png" alt="">
+                    <img class="modal-img" src="../assets/img-projects/discover-movie_1.png" alt="">
                 </div>
             </div>
             <div class="slideshow">
-                <img onclick="openModal('marvel-clon_1.png')" class="slide" src="../assets/img-projects/marvel-clon_1.png" alt="Marvel Clon Screenshot">
-                <img onclick="openModal('marvel-clon_2.png')" class="slide" src="../assets/img-projects/marvel-clon_2.png" alt="Marvel Clon Screenshot">
-                <img onclick="openModal('marvel-clon_3.png')" class="slide" src="../assets/img-projects/marvel-clon_3.png" alt="Marvel Clon Screenshot">
-                <img onclick="openModal('marvel-clon_4.png')" class="slide" src="../assets/img-projects/marvel-clon_4.png" alt="Marvel Clon Screenshot">
-                <img onclick="openModal('marvel-clon_5.png')" class="slide" src="../assets/img-projects/marvel-clon_5.png" alt="Marvel Clon Screenshot">
-                <img onclick="openModal('marvel-clon_6.png')" class="slide" src="../assets/img-projects/marvel-clon_6.png" alt="Marvel Clon Screenshot">
-                <img onclick="openModal('marvel-clon_7.png')" class="slide" src="../assets/img-projects/marvel-clon_7.png" alt="Marvel Clon Screenshot">
-
+                <img onclick="openModal('discover-movie_1.png')" class="slide" src="../assets/img-projects/discover-movie_1.png" alt="Discover Movie Screenshot">
+                <img onclick="openModal('discover-movie_2.png')" class="slide" src="../assets/img-projects/discover-movie_2.png" alt="Discover Movie Screenshot">
+                <img onclick="openModal('discover-movie_3.png')" class="slide" src="../assets/img-projects/discover-movie_3.png" alt="Discover Movie Screenshot">
+                <img onclick="openModal('discover-movie_4.png')" class="slide" src="../assets/img-projects/discover-movie_4.png" alt="Discover Movie Screenshot">
+                <img onclick="openModal('discover-movie_5.png')" class="slide" src="../assets/img-projects/discover-movie_5.png" alt="Discover Movie Screenshot">
+                <img onclick="openModal('discover-movie_6.png')" class="slide" src="../assets/img-projects/discover-movie_6.png" alt="Discover Movie Screenshot">
                 <span onclick="changeSlide(1)" class="arrow-next"></span>
                 <span onclick="changeSlide(-1)" class="arrow-prev"></span>
             </div>
@@ -82,13 +79,15 @@
                 <span onclick="selectSlide(3)" class="dot"></span>
                 <span onclick="selectSlide(4)" class="dot"></span>
                 <span onclick="selectSlide(5)" class="dot"></span>
-                <span onclick="selectSlide(6)" class="dot"></span>
             </div>
         </div>
 
         <section class="project-description project-section">
             <h2>Project description</h2>
-            <p>Full responsive static clone from the homepage of Marvel’s website.</p>
+            <p>Search engine for movies and TV shows.</p>
+            <p>
+                On the web you can register using your email or your Gmail account, add the movies or series to your favorites and you will receive lists of recommendations according to your interests and trends.
+            </p>
         </section>
 
         <div class="decoration">
@@ -120,24 +119,42 @@
                     <img class="tech-logo" src="../assets/logos/css3.svg" alt="css3-logo">
                 </div>
                 <div class="grid-item">
-                    <h3>SASS</h3>
-                    <img class="tech-logo" src="../assets/logos/sass.svg" alt="bootstrap-logo">
+                    <h3>Bootstrap</h3>
+                    <img class="tech-logo" src="../assets/logos/bootstrap.svg" alt="bootstrap-logo">
                 </div>
                 <div class="grid-item">
-                    <h3>JavaScript</h3>
-                    <img class="tech-logo" src="../assets/logos/javascript.svg" alt="TypeScript-logo">
+                    <h3>TypeScript</h3>
+                    <img class="tech-logo" src="../assets/logos/typescript.svg" alt="TypeScript-logo">
+                </div>
+                <div class="grid-item">
+                    <h3>Angular</h3>
+                    <img class="tech-logo" src="../assets/logos/angular.svg" alt="Angular-logo">
+                </div>
+                <div class="grid-item">
+                    <h3>Firebase</h3>
+                    <img class="tech-logo" src="../assets/logos/firebase.svg" alt="Firebase-logo">
                 </div>
             </div>
+
+            <h2>Other technologies</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.themoviedb.org/documentation/api">TMDB API</a>
+                    </li>
+                    <li>
+                        <a href="https://swiperjs.com/">Swiper.js</a>
+                    </li>
+                </ul>
                 
         </section>
 
      
         <div class="buttons-container">
             <div class="btn-border">
-                <a href="https://github.com/ifreddy18/marvel-clon" class="btn">View Code</a>
+                <a href="https://github.com/ifreddy18/discover-movie" class="btn">View Code</a>
             </div>
             <div class="btn-border">
-                <a href="https://ifreddy18.github.io/marvel-clon/" class="btn">View Live</a>
+                <a href="https://ifreddy18.github.io/discover-movie/" class="btn">View Live</a>
             </div>
         </div>
 
@@ -148,9 +165,9 @@
     </footer>
 
     <!-- Scrips -->
-    <script src="../js/main.js"></script>
-    <script src="../js/projects.js"></script>
-    <script src="../js/modal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/modal.js"></script>
 
 </body>
 </html>
