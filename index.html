@@ -169,17 +169,17 @@
                 profile or you can simple use the next form.
             </p>
 
-            <form class="form" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+            <form class="form" id="form" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
                 
                 <!-- Name -->
                 <div class="input-container">
                     <label class="form-label" for="form_name">Name</label>
                     <input id="form_name"
+                        name="name"
                         class="form-input" 
                         type="text" 
                         minlength="3"
                         required>
-                    
                 </div>
                 <!-- Name - End -->
 
@@ -187,11 +187,11 @@
                 <div class="input-container">
                     <label class="form-label" for="form_email">Email</label>
                     <input id="form_email"
+                        name="email"
                         class="form-input" 
                         type="email" 
                         minlength="8"
                         required>
-                    
                 </div>
                 <!-- Email - End -->
 
@@ -199,19 +199,19 @@
                 <div class="input-container">
                     <label class="form-label" for="form_message">Message</label>
                     <textarea id="form_message"
+                        name="message"
                         class="form-input" 
                         type="text" 
                         minlength="10"
                         required></textarea>
-                    
                 </div>
                 <!-- Message - End -->
 
                 <div class="btn-border">
                     <button class="btn" type="submit">Send message</button>
                 </div>
-
             </form>
+            <a href="" id="mailto"></a>
 
         </section>
         <!------- Contact - END ------->
