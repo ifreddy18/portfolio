@@ -135,6 +135,9 @@ p {
   margin: 0 0 16px;
   letter-spacing: 1px;
 }
+#about .description h3 {
+  margin: 5px 0 20px 0;
+}
 #about .btn-border {
   background: linear-gradient(to right, red, purple);
   padding: 2px;
@@ -354,6 +357,23 @@ p {
   fill: url(#card-icon-gradient);
 }
 
+@media (min-width: 600px) {
+  #about .cv-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  #about .btn-border {
+    width: 200px;
+  }
+  #about .btn {
+    font-size: 16px !important;
+    width: 196px !important;
+  }
+}
 @media (min-width: 768px) {
   .section-container {
     padding: 0 40px;
@@ -380,10 +400,11 @@ p {
     font-size: 18px;
   }
   #about .btn-border {
-    margin-top: 48px;
+    width: 200px;
   }
   #about .btn {
-    font-size: 18px;
+    font-size: 18px !important;
+    width: 196px !important;
   }
 
   #projects .cards-container {
@@ -790,10 +811,59 @@ p {
   font-size: 26px;
   font-weight: 900;
   letter-spacing: 2px;
+  text-align: center;
+}
+.navbar__list-container ul .download-title {
+  color: #6f6f6f !important;
+}
+.navbar__list-container hr {
+  color: purple;
+  width: 60%;
 }
 
 .navbar__desktop {
   display: none;
+}
+
+.dropdown-container {
+  display: block;
+  position: relative;
+}
+.dropdown-container .dropdown-btn {
+  border: 1px solid purple;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 99;
+  transition: border-radius 5ms;
+}
+.dropdown-container .dropdown-content {
+  position: absolute;
+  top: 39px;
+  left: 5px;
+  display: none;
+  width: 140px !important;
+  background-color: #202020;
+  border-radius: 0 0 5px 5px;
+}
+.dropdown-container .dropdown-content .btn {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+.dropdown-container .dropdown-content .btn:hover {
+  color: #f0f0f0;
+  background-color: purple;
+  transition: all 200ms ease-in-out;
+  border-radius: 0 0 5px 5px;
+}
+.dropdown-container:hover .dropdown-btn {
+  border-radius: 5px 5px 5px 0;
+  transition: border-radius 5ms;
+}
+.dropdown-container:hover .dropdown-content {
+  display: block;
 }
 
 .main-container {

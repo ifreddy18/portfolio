@@ -32,7 +32,11 @@
                     <li><a onclick="closeMenuMobile()" href="#about">About</a></li>
                     <li><a onclick="closeMenuMobile()" href="#projects">Projects</a></li>
                     <li><a onclick="closeMenuMobile()" href="#contact">Contact</a></li>
-                    <li><a onclick="closeMenuMobile()" href="#home">Download CV</a></li>
+                    <hr>
+                    <!-- <li><span class="download-title">Download CV</span></li> -->
+                    <li><a onclick="closeMenuMobile()" href="assets/cv/cv-freddy-michelena_ESP.pdf" download>Download CV (Español)</a></li>
+                    <li><a onclick="closeMenuMobile()" href="assets/cv/cv-freddy-michelena_ENG.pdf" download>Download CV (English)</a></li>
+
                 </ul>
             </div>
 
@@ -44,7 +48,14 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#home">Download CV</a></li>
+                    <li class="dropdown-container">
+                        <a class="dropdown-btn">Download CV</a>
+                        <div class="dropdown-content">
+                            <a class="btn" href="assets/cv/cv-freddy-michelena_ESP.pdf" download>CV (Esp)</a>
+                            <!-- <br> -->
+                            <a class="btn" href="assets/cv/cv-freddy-michelena_ENG.pdf" download>CV (Eng)</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
     
@@ -94,11 +105,18 @@
                 <p>In my spare time I like to go mountain hikes, bike riding and take photos. But, I also like to be in continuous learning about the topics of my interest, such as web development.</p>
                 <p>At this time I have worked mostly with front-end technologies (mainly Angular), but I am interested in learning any other that allows me to continue growing.</p>
                 <p>I believe that the best tools and technologies are not the most sophisticated or the most popular, but rather those that help you solve the most complex problems. And that is what interests me in depth. Use programming to solve people's real problems.</p>
-                <div class="btn-border" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2000" data-aos-once="true">
-                    <a href="#contact" class="btn">Download CV</a>
+                
+                <h3 class="subtitle">Download my curriculum</h3>
+
+                <div class="cv-btn-container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000" data-aos-once="true">
+                    <div class="btn-border">
+                        <a href="assets/cv/cv-freddy-michelena_ESP.pdf" class="btn" download="">CV (Español)</a>
+                    </div>
+                    <div class="btn-border" >
+                        <a href="assets/cv/cv-freddy-michelena_ENG.pdf" class="btn" download="">CV (English)</a>
+                    </div>
                 </div>
             </div>
-
         </section>
         <!------- About me - END ------->
 

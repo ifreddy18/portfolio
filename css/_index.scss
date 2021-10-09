@@ -77,6 +77,10 @@
             margin: 0 0 16px;
             letter-spacing: 1px;
         }
+
+        h3 {
+            margin: 5px 0 20px 0;
+        }
     }
 
     .btn-border {
@@ -303,6 +307,26 @@
     }
 }
 
+@media (min-width: 600px) {
+    #about {
+        .cv-btn-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .btn-border {
+            width: 200px;
+        }
+
+        .btn {
+            font-size: 16px !important;
+            width: 196px !important;
+        }
+    }
+}
 
 @media (min-width: 768px) {
     
@@ -337,11 +361,12 @@
         }
 
         .btn-border {
-            margin-top: 48px;
+            width: 200px;
         }
 
         .btn {
-            font-size: 18px;
+            font-size: 18px !important;
+            width: 196px !important;
         }
     }
 
@@ -361,3 +386,4 @@
     }
         
 }
+
