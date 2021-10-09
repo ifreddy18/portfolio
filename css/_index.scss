@@ -156,9 +156,19 @@
                     fill: $card-bg-color;
                 }
             }
-        
-        
+
+            &.strats-app {
+                width: 200px !important;
+                fill: url(#card-icon-gradient) !important;
+
+                g,
+                path { 
+                    fill: url(#card-icon-gradient) !important;
+                }
+            }   
+            
         }
+
         .card-description {
             position: absolute;
             bottom: 20px;
@@ -324,6 +334,10 @@
 
         p {
             font-size: 18px;
+        }
+
+        .btn-border {
+            margin-top: 48px;
         }
 
         .btn {

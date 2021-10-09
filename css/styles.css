@@ -218,6 +218,14 @@ p {
 #projects .card .card-icon-svg.marvel-clon .marvel-text {
   fill: #202020;
 }
+#projects .card .card-icon-svg.strats-app {
+  width: 200px !important;
+  fill: url(#card-icon-gradient) !important;
+}
+#projects .card .card-icon-svg.strats-app g,
+#projects .card .card-icon-svg.strats-app path {
+  fill: url(#card-icon-gradient) !important;
+}
 #projects .card .card-description {
   position: absolute;
   bottom: 20px;
@@ -370,6 +378,9 @@ p {
   }
   #about p {
     font-size: 18px;
+  }
+  #about .btn-border {
+    margin-top: 48px;
   }
   #about .btn {
     font-size: 18px;
@@ -556,6 +567,7 @@ p {
   margin: 0 auto 30px;
   max-width: 800px;
   font-size: 1rem;
+  line-height: 1.4;
 }
 .project-section h2 {
   font-size: 1.5rem;
@@ -564,6 +576,29 @@ p {
 .project-section p {
   margin-bottom: 10px;
   letter-spacing: 1px;
+}
+.project-section ul {
+  list-style: georgian !important;
+}
+.project-section li {
+  position: relative;
+  color: #6f6f6f !important;
+  margin-left: 20px;
+}
+.project-section li::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #6f6f6f;
+  position: absolute;
+  left: -20px;
+  top: 7.5px;
+}
+.project-section a:hover {
+  color: purple;
+  transition: all 200ms ease-in-out;
 }
 
 .tech-stack {
@@ -772,6 +807,10 @@ p {
 }
 .footer h4 {
   margin: 0 auto 5px;
+}
+
+#mailto {
+  opacity: 0;
 }
 
 @media (min-width: 768px) {

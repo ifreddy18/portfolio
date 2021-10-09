@@ -56,12 +56,12 @@
         <!------- Home ------->
         <section id="home" class="section-container">
             <div class="container">
-                <div class="title" data-aos="fade-down" data-aos-duration="1000">
+                <div class="title" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
                     <h1>Hi, My name is <span>Freddy</span></h1>
                     <p class="title-description">I'm a self-taught web developer, Mechanical Engineer and a problem solving lover</p>   
                 </div>
                 
-                <div class="btn-border" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150">
+                <div class="btn-border" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="150" data-aos-once="true">
                     <a href="#about" class="btn">Know more</a>
                 </div>
 
@@ -86,18 +86,19 @@
             <h2 class="section-title" 
                 data-aos="fade-up" 
                 data-aos-duration="1000" 
-                data-aos-delay="150">About me</h2>
+                data-aos-delay="150"
+                data-aos-once="true">About me</h2>
 
-            <div class="description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <div class="description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
                 <p>My name is Freddy Michelena. I am a Mechanical Engineer from Venezuela who discovered that his passion is software and web development. </p>
                 <p>In my spare time I like to go mountain hikes, bike riding and take photos. But, I also like to be in continuous learning about the topics of my interest, such as web development.</p>
                 <p>At this time I have worked mostly with front-end technologies (mainly Angular), but I am interested in learning any other that allows me to continue growing.</p>
                 <p>I believe that the best tools and technologies are not the most sophisticated or the most popular, but rather those that help you solve the most complex problems. And that is what interests me in depth. Use programming to solve people's real problems.</p>
+                <div class="btn-border" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2000" data-aos-once="true">
+                    <a href="#contact" class="btn">Download CV</a>
+                </div>
             </div>
 
-            <div class="btn-border" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2000">
-                <a href="#contact" class="btn">Download CV</a>
-            </div>
         </section>
         <!------- About me - END ------->
 
@@ -113,9 +114,9 @@
 
         <!------- Projects ------->
         <section id="projects" class="section-container">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Projects</h2>
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">Projects</h2>
 
-            <div class="cards-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+            <div class="cards-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" data-aos-once="true">
                 <a class="card" href="discover-movie.html">
                     <h3 class="card-title">Discover Movie</h3>
                     <svg class="card-icon-svg discover-movie" width="512pt" height="512pt" viewBox="-31 0 512 512"  xmlns="http://www.w3.org/2000/svg">
@@ -154,6 +155,40 @@
                     </span>
                 </a>
 
+                <a class="card" href="strats-app.html">
+                    <h3 class="card-title">Strats App</h3>
+                    <!-- <svg class="card-icon-svg strats-app" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 91">
+                        <path d="M74.5 49.5c1.6 2.8 2.5 6.3 2.5 10.4v0.2c0 4.2-0.8 8-2.5 11.4 -1.7 3.4-4.1 6.2-7.1 8.6 -3.1 2.3-6.8 4.1-11.2 5.4 -4.4 1.3-9.3 1.9-14.7 1.9 -8.2 0-15.9-1.1-23-3.4 -7.1-2.3-13.2-5.7-18.3-10.2l14.4-17.1c4.4 3.4 9 5.8 13.8 7.2 4.8 1.5 9.6 2.2 14.4 2.2 2.5 0 4.2-0.3 5.3-0.9 1.1-0.6 1.6-1.5 1.6-2.5v-0.2c0-1.2-0.8-2.1-2.4-2.9 -1.6-0.8-4.5-1.6-8.8-2.4 -4.5-0.9-8.8-2-12.9-3.2 -4.1-1.2-7.7-2.8-10.8-4.7 -3.1-1.9-5.6-4.3-7.4-7.2C5.4 39 4.5 35.4 4.5 31.2V31c0-3.8 0.7-7.4 2.2-10.7 1.5-3.3 3.7-6.2 6.6-8.6 2.9-2.5 6.5-4.4 10.7-5.8 4.2-1.4 9.1-2.1 14.7-2.1 7.8 0 14.7 0.9 20.5 2.8 5.9 1.8 11.1 4.6 15.8 8.3L61.9 33c-3.8-2.8-7.9-4.8-12.1-6.1 -4.3-1.3-8.3-1.9-12-1.9 -2 0-3.5 0.3-4.4 0.9 -1 0.6-1.4 1.4-1.4 2.4v0.2c0 1.1 0.7 2 2.2 2.8 1.5 0.8 4.3 1.6 8.5 2.4 5.1 0.9 9.8 2 14 3.3 4.2 1.3 7.8 3 10.9 5C70.5 44.2 72.9 46.6 74.5 49.5zM75.5 28.1h23.7v57.8h26.9V28.1h23.7V5.3H75.5V28.1zM387.9 0.3l-43.3 85.6h25.8l17.5-34.6 17.6 34.6h25.8L387.9 0.3zM267.3 0.3l43.4 85.6h-25.8l-17.5-34.6 -17.5 34.6h-17.5 -8.3 -22.4l-15.2-23h-0.2 -5.5v23h-26.9V5.3H193c7.2 0 13.1 0.8 17.8 2.5 4.6 1.6 8.4 3.9 11.2 6.7 2.5 2.4 4.3 5.2 5.5 8.3 1.2 3.1 1.8 6.7 1.8 10.8v0.2c0 5.9-1.4 10.9-4.3 14.9 -2.8 4.1-6.7 7.3-11.6 9.7l14 20.4L267.3 0.3zM202.5 35.6c0-2.6-0.9-4.5-2.8-5.8 -1.8-1.3-4.3-1.9-7.5-1.9h-11.7v15.8h11.6c3.2 0 5.8-0.7 7.6-2.1 1.8-1.4 2.8-3.3 2.8-5.8V35.6zM345.2 5.3L327.6 40 310 5.3h-25.8l43.4 85.6 43.3-85.6H345.2z"/>
+                    </svg> -->
+
+                    <svg class="card-icon-svg strats-app" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+                        <defs>
+                        </defs>
+                        <g transform="translate(128 128) scale(.80 .80)">
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-175.05 -175.05000000000004) scale(3.89 3.89)" >
+                            <path d="M 58.033 76.551 c -14.277 0 -25.893 -11.616 -25.893 -25.894 c 0 -14.278 11.616 -25.894 25.893 -25.894 s 25.894 11.616 25.894 25.894 C 83.927 64.935 72.311 76.551 58.033 76.551 z M 58.033 27.763 c -12.623 0 -22.893 10.27 -22.893 22.894 s 10.27 22.894 22.893 22.894 c 12.624 0 22.894 -10.27 22.894 -22.894 S 70.657 27.763 58.033 27.763 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 41.449 52.157 h -1.641 c -0.829 0 -1.5 -0.672 -1.5 -1.5 s 0.671 -1.5 1.5 -1.5 h 1.641 c 0.829 0 1.5 0.672 1.5 1.5 S 42.278 52.157 41.449 52.157 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 76.778 52.157 h -1.642 c -0.828 0 -1.5 -0.672 -1.5 -1.5 s 0.672 -1.5 1.5 -1.5 h 1.642 c 0.828 0 1.5 0.672 1.5 1.5 S 77.606 52.157 76.778 52.157 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 58.293 70.642 c -0.828 0 -1.5 -0.672 -1.5 -1.5 v -1.641 c 0 -0.828 0.672 -1.5 1.5 -1.5 s 1.5 0.672 1.5 1.5 v 1.641 C 59.793 69.97 59.121 70.642 58.293 70.642 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 58.293 35.313 c -0.828 0 -1.5 -0.671 -1.5 -1.5 v -1.641 c 0 -0.829 0.672 -1.5 1.5 -1.5 s 1.5 0.671 1.5 1.5 v 1.641 C 59.793 34.642 59.121 35.313 58.293 35.313 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 70.497 45.294 c -0.326 -0.761 -1.207 -1.113 -1.971 -0.785 l -6.856 2.95 c -0.892 -1.014 -2.184 -1.667 -3.637 -1.667 c -0.529 0 -1.029 0.106 -1.506 0.263 l -8.545 -11.684 c -0.489 -0.669 -1.428 -0.814 -2.096 -0.326 c -0.669 0.489 -0.814 1.428 -0.326 2.096 L 54.1 47.819 c -0.58 0.801 -0.931 1.777 -0.931 2.839 c 0 2.683 2.182 4.864 4.864 4.864 s 4.865 -2.182 4.865 -4.864 c 0 -0.151 -0.031 -0.294 -0.045 -0.441 l 6.858 -2.951 C 70.473 46.938 70.824 46.056 70.497 45.294 z M 58.033 52.521 c -1.028 0 -1.864 -0.836 -1.864 -1.864 s 0.836 -1.865 1.864 -1.865 s 1.865 0.837 1.865 1.865 S 59.062 52.521 58.033 52.521 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 63.292 19.131 v -3.22 c 1.786 -0.55 3.097 -2.197 3.097 -4.161 c 0 -2.412 -1.962 -4.374 -4.373 -4.374 h -7.964 c -2.412 0 -4.374 1.962 -4.374 4.374 c 0 1.964 1.31 3.61 3.097 4.161 v 3.226 c -12.643 2.14 -23.157 11.844 -25.965 24.64 c -0.177 0.809 0.334 1.609 1.144 1.787 c 0.805 0.172 1.609 -0.335 1.787 -1.144 c 2.889 -13.17 14.789 -22.729 28.293 -22.729 C 74.006 21.69 87 34.685 87 50.657 c 0 15.972 -12.994 28.966 -28.967 28.966 c -13.503 0 -25.401 -9.558 -28.292 -22.725 c -0.179 -0.81 -0.979 -1.326 -1.787 -1.144 c -0.809 0.178 -1.321 0.978 -1.144 1.786 c 3.191 14.533 16.322 25.082 31.223 25.082 C 75.66 82.623 90 68.283 90 50.657 C 90 34.822 78.424 21.647 63.292 19.131 z M 54.052 10.376 h 7.964 c 0.757 0 1.373 0.616 1.373 1.374 s -0.616 1.373 -1.373 1.373 h -7.964 c -0.758 0 -1.374 -0.616 -1.374 -1.373 S 53.294 10.376 54.052 10.376 z M 55.774 18.779 v -2.655 h 4.518 v 2.656 c -0.747 -0.052 -1.499 -0.089 -2.259 -0.089 C 57.275 18.69 56.523 18.725 55.774 18.779 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 28.276 52.157 H 1.5 c -0.829 0 -1.5 -0.672 -1.5 -1.5 s 0.671 -1.5 1.5 -1.5 h 26.776 c 0.829 0 1.5 0.672 1.5 1.5 S 29.105 52.157 28.276 52.157 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 23.675 42.934 H 6.283 c -0.829 0 -1.5 -0.671 -1.5 -1.5 s 0.671 -1.5 1.5 -1.5 h 17.392 c 0.829 0 1.5 0.671 1.5 1.5 S 24.503 42.934 23.675 42.934 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 23.675 61.38 H 6.283 c -0.829 0 -1.5 -0.672 -1.5 -1.5 s 0.671 -1.5 1.5 -1.5 h 17.392 c 0.829 0 1.5 0.672 1.5 1.5 S 24.503 61.38 23.675 61.38 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        </g>
+                        </g>
+                    </svg>
+                    
+                    <p class="card-description">Statistics for STRAVA</p>
+
+                    <span class="card-overlay">
+                        <h3 class="card-title">Strats App</h3>
+                        <span class="button">View project</span>
+                        <p class="card-description">Statistics for STRAVA</p>
+                    </span>
+                </a>
+
             </div>
         </section>
         <!------- Projects - END ------->
@@ -161,15 +196,15 @@
 
         <!------- Contact ------->
         <section id="contact" class="section-container">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Contact</h2>
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" data-aos-once="true">Contact</h2>
 
-            <p class="section-description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <p class="section-description" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500" data-aos-once="true">
                 If you want to get it touch with me, you can send me a message to my 
                 <a href="https://www.linkedin.com/in/freddy-michelena-057426102/" target="_blank">LinkedIn</a> 
                 profile or you can simple use the next form.
             </p>
 
-            <form class="form" id="form" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
+            <form class="form" id="form" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000" data-aos-once="true">
                 
                 <!-- Name -->
                 <div class="input-container">

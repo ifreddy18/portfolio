@@ -156,6 +156,7 @@ $max-width: 800px;
     margin: 0 auto 30px;
     max-width: $max-width;
     font-size: 1rem;
+    line-height: 1.4;
 
     h2 {
         font-size: 1.5rem;
@@ -165,6 +166,33 @@ $max-width: 800px;
     p {
         margin-bottom: 10px;
         letter-spacing: 1px;
+    }
+
+    ul {
+        list-style: georgian !important;
+    }
+
+    li {
+        position: relative;
+        color: $primary-p-color !important;
+        margin-left: 20px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background-color: $primary-p-color;
+            position: absolute;
+            left: -20px;
+            top: 7.5px;
+        }
+    }
+
+    a:hover {
+        color: purple;
+        transition: all 200ms ease-in-out;
     }
 
 }
