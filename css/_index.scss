@@ -170,6 +170,18 @@
                     fill: url(#card-icon-gradient) !important;
                 }
             }   
+
+            &.fintech {
+                width: 280px;
+
+                rect {
+                    fill: url(#card-icon-gradient) !important;
+                }
+
+                path {
+                    fill: $card-bg-color;
+                }
+            }
             
         }
 

@@ -229,6 +229,15 @@ p {
 #projects .card .card-icon-svg.strats-app path {
   fill: url(#card-icon-gradient) !important;
 }
+#projects .card .card-icon-svg.fintech {
+  width: 280px;
+}
+#projects .card .card-icon-svg.fintech rect {
+  fill: url(#card-icon-gradient) !important;
+}
+#projects .card .card-icon-svg.fintech path {
+  fill: #202020;
+}
 #projects .card .card-description {
   position: absolute;
   bottom: 20px;
@@ -536,10 +545,10 @@ p {
   z-index: 10;
 }
 .slideshow .slide.toRight {
-  transform: translateX(calc(15% - 50%));
+  transform: translateX(-35%);
 }
 .slideshow .slide.toLeft {
-  transform: translateX(calc(-15% - 50%));
+  transform: translateX(-65%);
 }
 .slideshow .arrow-prev,
 .slideshow .arrow-next {
