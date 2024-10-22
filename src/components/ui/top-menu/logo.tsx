@@ -20,7 +20,9 @@ export const Logo = () => {
 	if (!isMounted) return null
 
 	return resolvedTheme === 'dark' ? (
-		<GrandientButton href={href}>{text}</GrandientButton>
+		<GrandientButton href={href} className="text-xl">
+			{text}
+		</GrandientButton>
 	) : (
 		<GradientText href={href} className="text-xl font-bold">
 			{text}

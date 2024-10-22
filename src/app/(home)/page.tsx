@@ -1,11 +1,18 @@
 import { AboutSection } from '@/components/about'
+import { ContactSection } from '@/components/contact'
+import { HomeSection } from '@/components/home'
+import { ProjectsSection } from '@/components/projects'
 
 export default function HomePage() {
 	return (
 		<main>
-			<h1>Hello Page</h1>
+			<HomeSection />
 
 			<AboutSection />
+
+			<ProjectsSection />
+
+			<ContactSection />
 		</main>
 	)
 }

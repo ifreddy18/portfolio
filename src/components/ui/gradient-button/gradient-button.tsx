@@ -16,8 +16,8 @@ export const GrandientButton = ({
 		<div className="border-button" suppressHydrationWarning>
 			<Link
 				href={href}
-				className={cn('logo bg-background', className)}
 				{...props}
+				className={cn('logo bg-background', className)}
 			>
 				{children}
 			</Link>

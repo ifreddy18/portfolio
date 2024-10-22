@@ -3,7 +3,7 @@ import './style.css'
 import Link from 'next/link'
 
 interface Props extends React.HTMLAttributes<HTMLSpanElement> {
-	href: string
+	href?: string
 }
 
 export const GradientText = ({
