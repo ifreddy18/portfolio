@@ -1,0 +1,21 @@
+.border-button {
+	background: linear-gradient(to right, red, purple);
+	padding: 2px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 200ms ease-in-out;
+}
+
+.border-button:hover {
+	box-shadow: 0px 0px 6px red;
+}
+
+.logo {
+	display: block;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	/* padding: 10px; */
+	font-size: 20px;
+}
