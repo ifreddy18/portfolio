@@ -1,1 +1,5 @@
 export * from './top-menu/top-menu'
+export * from './divider/divider'
+export * from './section-title/section-title'
+export * from './gradient-button/gradient-button'
+export * from './gradient-text/gradient-text'

@@ -1,6 +1,7 @@
-import { cn } from '@/lib/utils'
-import './style.css'
 import Link from 'next/link'
+import { cn } from '@/lib/utils'
+
+import './style.css'
 
 interface Props extends React.HTMLAttributes<HTMLSpanElement> {
 	href?: string
