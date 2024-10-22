@@ -59,9 +59,9 @@ export const MobileDrawer = () => {
 
 				{/* Footer */}
 				<DrawerFooter>
-					<div className="mb-0 mt-0 border-t-2 pt-2">
+					{/* <div className="mb-0 mt-0 border-t-2 pt-2">
 						<ThemeToggle isMobile />
-					</div>
+					</div> */}
 					<div className="mb-4 mt-1 border-t-2 px-5">
 						<span className="my-3 block">Download CV</span>
 						<DownloadCV isMobile />

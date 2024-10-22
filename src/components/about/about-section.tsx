@@ -8,7 +8,7 @@ export const AboutSection = () => {
 		>
 			<div className="flex w-5/6 flex-col items-center justify-center md:w-[768px]">
 				<SectionTitle>About</SectionTitle>
-				<p className="mt-4 text-gray-400">
+				<p className="mt-4 text-lg text-gray-900 dark:text-gray-400">
 					I’m a passionate Web Developer with over 3 years of experience
 					building full-stack applications. <br />
 					<br /> My background as a Mechanical Engineer gives me a unique

@@ -13,7 +13,7 @@ export const HomeSection = () => {
 					Hi, my name is{' '}
 					<GradientText className="font-bold">Freddy</GradientText>
 				</h1>
-				<p className="my-6 text-center text-xl sm:my-4 sm:text-2xl md:text-3xl">
+				<p className="my-6 text-center text-xl text-gray-400 sm:my-4 sm:text-2xl md:text-3xl">
 					I'm a self-taught web developer, Mechanical Engineer and a problem
 					solving lover
 				</p>

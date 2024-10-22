@@ -30,9 +30,9 @@ export const TopMenu = () => {
 				<div className="hidden sm:block">
 					<DownloadCV />
 				</div>
-				<div className="ml-4 hidden sm:block">
+				{/* <div className="ml-4 hidden sm:block">
 					<ThemeToggle />
-				</div>
+				</div> */}
 			</div>
 
 			<div className="block sm:hidden">

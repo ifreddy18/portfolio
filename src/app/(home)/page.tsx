@@ -14,6 +14,7 @@ export default function HomePage() {
 			<Divider />
 
 			<ProjectsSection />
+			<Divider />
 
 			<ContactSection />
 		</main>
