@@ -1,5 +1,3 @@
-'use client'
-
 import './style.css'
 
 export const Divider = () => {
@@ -9,14 +7,14 @@ export const Divider = () => {
 				version="1.1"
 				id="Capa_1"
 				xmlns="http://www.w3.org/2000/svg"
-				// xmlns:xlink="http://www.w3.org/1999/xlink"
+				xmlnsXlink="http://www.w3.org/1999/xlink"
 				x="0px"
 				y="0px"
 				width="474.232px"
 				height="25.75px"
 				viewBox="0 0 474.232 25.75"
-				// enable-background="new 0 0 474.232 25.75"
-				// xml:space="preserve"
+				enableBackground="new 0 0 474.232 25.75"
+				xmlSpace="preserve"
 			>
 				<path
 					id="XMLID_363_"

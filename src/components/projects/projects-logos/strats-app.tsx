@@ -1,5 +1,3 @@
-'use client'
-
 import './style.css'
 
 export const StratsAppLogo = () => {
