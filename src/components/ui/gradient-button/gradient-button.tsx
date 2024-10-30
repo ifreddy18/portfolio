@@ -6,6 +6,7 @@ interface Props extends React.HTMLAttributes<HTMLAnchorElement> {
 	href: string
 	isExternal?: boolean
 	target?: string // Only use if isExteral = true
+	download?: boolean
 }
 
 export const GrandientButton = ({
@@ -14,14 +15,16 @@ export const GrandientButton = ({
 	className,
 	isExternal = false,
 	target,
+	download = false,
 	...props
 }: Props) => {
-	if (isExternal)
+	if (isExternal || download)
 		return (
 			<div className="border-button" suppressHydrationWarning>
 				<a
 					href={href}
 					target={target}
+					download={download}
 					{...props}
 					className={cn('logo bg-background', className)}
 				>

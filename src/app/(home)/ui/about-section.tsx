@@ -1,4 +1,5 @@
 import { Divider, GrandientButton, SectionTitle } from '@/components/ui'
+import { CVPaths } from '@/constants'
 
 export const AboutSection = () => {
 	return (
@@ -23,14 +24,16 @@ export const AboutSection = () => {
 				<p className="mt-4 w-full font-bold">Download my CV</p>
 				<div className="mt-4 flex flex-col justify-between gap-4 sm:w-[300px] sm:flex-row">
 					<GrandientButton
-						href="#about"
+						href={CVPaths.esp}
 						className="rounded-md px-6 py-2 sm:px-4"
+						download
 					>
 						CV (Español)
 					</GrandientButton>
 					<GrandientButton
-						href="#about"
+						href={CVPaths.eng}
 						className="rounded-md px-6 py-2 sm:px-4"
+						download
 					>
 						CV (English)
 					</GrandientButton>
