@@ -9,6 +9,7 @@ import {
 } from '../dropdown-menu'
 
 import { Button } from '@/components/ui/button'
+import { CVPaths } from '@/constants'
 
 interface Props {
 	isMobile?: boolean
@@ -18,20 +19,22 @@ export const DownloadCV = ({ isMobile = false }: Props) => {
 	if (isMobile)
 		return (
 			<div className="flex w-full flex-col">
-				<Button
-					variant="outline"
-					className="m-2 rounded-md p-2 transition-all hover:bg-gray-100 dark:hover:bg-accent"
-					onClick={() => console.log('Español')}
-				>
-					Español
-				</Button>
-				<Button
-					variant="outline"
-					className="m-2 rounded-md p-2 transition-all hover:bg-gray-100 dark:hover:bg-accent"
-					onClick={() => console.log('English')}
-				>
-					English
-				</Button>
+				<a href={CVPaths.esp} className="cursor-pointer" download>
+					<Button
+						variant="outline"
+						className="m-2 rounded-md p-2 transition-all hover:bg-gray-100 dark:hover:bg-accent"
+					>
+						Español
+					</Button>
+				</a>
+				<a href={CVPaths.eng} className="cursor-pointer" download>
+					<Button
+						variant="outline"
+						className="m-2 rounded-md p-2 transition-all hover:bg-gray-100 dark:hover:bg-accent"
+					>
+						English
+					</Button>
+				</a>
 			</div>
 		)
 
@@ -43,12 +46,16 @@ export const DownloadCV = ({ isMobile = false }: Props) => {
 				</Button>
 			</DropdownMenuTrigger>
 			<DropdownMenuContent align="end">
-				<DropdownMenuItem onClick={() => console.log('Español')}>
-					Español
-				</DropdownMenuItem>
-				<DropdownMenuItem onClick={() => console.log('English')}>
-					English
-				</DropdownMenuItem>
+				<a href={CVPaths.esp} download>
+					<DropdownMenuItem className="cursor-pointer">
+						Español
+					</DropdownMenuItem>
+				</a>
+				<a href={CVPaths.eng} download>
+					<DropdownMenuItem className="cursor-pointer">
+						English
+					</DropdownMenuItem>
+				</a>
 			</DropdownMenuContent>
 		</DropdownMenu>
 	)
