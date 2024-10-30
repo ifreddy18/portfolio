@@ -1,1 +1,1 @@
-export * from './ui/ui-store'
+export * from './projects/projects-store'

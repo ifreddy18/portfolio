@@ -1,8 +1,9 @@
-import { AboutSection } from '@/components/about'
-import { ContactSection } from '@/components/contact'
-import { HomeSection } from '@/components/home'
-import { ProjectsSection } from '@/components/projects'
 import { Divider } from '@/components/ui'
+
+import { AboutSection } from './ui/about-section'
+import { ContactSection } from './ui/contact-section'
+import { HomeSection } from './ui/home-section'
+import { ProjectsSection } from './ui/projects-section'
 
 export default function HomePage() {
 	return (

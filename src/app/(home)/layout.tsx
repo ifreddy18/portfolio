@@ -1,4 +1,4 @@
-import { TopMenu } from '@/components/ui'
+import { Footer, TopMenu } from '@/components/ui'
 
 export default function HomeLayout({
 	children,
@@ -8,9 +8,8 @@ export default function HomeLayout({
 	return (
 		<main className="min-h-screen">
 			<TopMenu />
-			{/* <Sidebar /> */}
 			<div className="px-0 sm:px-10">{children}</div>
-			{/* <Footer /> */}
+			<Footer />
 		</main>
 	)
 }

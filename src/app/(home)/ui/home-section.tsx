@@ -1,15 +1,17 @@
-import { GrandientButton } from '../ui/gradient-button'
-import { GradientText } from '../ui/gradient-text'
+import { GrandientButton, GradientText } from '@/components/ui'
 
 export const HomeSection = () => {
 	return (
 		<section
-			id="#"
+			id="#home"
 			className="flex h-screen w-full items-center justify-center"
-			style={{ marginTop: '-55px' }}
+			// style={{ marginTop: '-55px' }}
 		>
 			<div className="flex w-5/6 flex-col items-center justify-center md:w-[768px]">
-				<h1 className="text-center text-4xl sm:text-5xl md:text-6xl">
+				<h1
+					className="text-center text-4xl sm:text-5xl md:text-6xl"
+					// style={{ marginTop: '-55px' }}
+				>
 					Hi, my name is{' '}
 					<GradientText className="font-bold">Freddy</GradientText>
 				</h1>

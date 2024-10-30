@@ -1,0 +1,60 @@
+.card-icon-svg {
+	width: 150px;
+	height: 150px;
+}
+
+/* Fintech */
+
+.card-icon-svg.fintech {
+	width: 100% !important;
+}
+
+.fintech rect {
+	fill: url(#card-icon-gradient) !important;
+}
+
+.fintech path {
+	fill: #0a0a0a;
+}
+
+/* Strats App */
+
+.card-icon-svg.strats-app {
+	width: 200px !important;
+	fill: url(#card-icon-gradient) !important;
+}
+
+.strats-app g,
+.strats-app path {
+	fill: url(#card-icon-gradient) !important;
+}
+
+/* Marvel Clon */
+
+.card-icon-svg.marvel-clon {
+	width: 100% !important;
+}
+
+.marvel-bg {
+	fill: url(#card-icon-gradient);
+}
+
+.marvel-text {
+	fill: #0a0a0a;
+}
+
+/* Discover Movie */
+
+.card-icon-svg.discover-movie {
+	fill: url(#card-icon-gradient);
+}
+
+/* Minesweeper */
+
+.card-icon-svg.minesweeper {
+	fill: url(#card-icon-gradient);
+}
+
+.minesweeper-bg {
+	fill: url(#card-icon-gradient);
+}

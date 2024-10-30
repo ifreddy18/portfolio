@@ -9,17 +9,17 @@ interface MenuOption {
 export const MenuOptions: MenuOption[] = [
 	{
 		name: 'About',
-		href: '#about',
+		href: '/#about',
 		icon: <PersonIcon className="h-6 w-6" />,
 	},
 	{
 		name: 'Projects',
-		href: '#projects',
+		href: '/#projects',
 		icon: <FileTextIcon className="h-6 w-6" />,
 	},
 	{
 		name: 'Contact',
-		href: '#contact',
+		href: '/#contact',
 		icon: <PaperPlaneIcon className="h-6 w-6" />,
 	},
 ]

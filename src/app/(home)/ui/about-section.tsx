@@ -1,13 +1,13 @@
-import { GrandientButton, SectionTitle } from '../ui'
+import { Divider, GrandientButton, SectionTitle } from '@/components/ui'
 
 export const AboutSection = () => {
 	return (
 		<section
 			id="about"
-			className="flex h-screen w-full items-center justify-center"
+			className="flex h-auto min-h-screen w-full flex-col items-center justify-center"
 		>
-			<div className="flex w-5/6 flex-col items-center justify-center md:w-[768px]">
-				<SectionTitle>About</SectionTitle>
+			<div className="flex h-auto w-5/6 flex-col items-center justify-center py-10 md:max-w-[768px]">
+				<SectionTitle className="">About</SectionTitle>
 				<p className="mt-4 text-lg text-gray-900 dark:text-gray-400">
 					I’m a passionate Web Developer with over 3 years of experience
 					building full-stack applications. <br />
