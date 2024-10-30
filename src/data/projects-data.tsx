@@ -27,8 +27,8 @@ export const ProjectsData: Project[] = [
 			'/assets/img-projects/minesweeper/minesweeper_07.jpg',
 		],
 		techStack: [Technologies['csharp'], Technologies['unity']],
-		// TODO: add url
-		// urlStore: '',
+		urlStore:
+			'https://play.google.com/store/apps/details?id=com.michelenadevelopment.minesweepermaster&hl=en',
 		description: `Classic minesweeper game with customizable props. Developed with Unity and available in Play Store.`,
 	},
 	// Fintech
