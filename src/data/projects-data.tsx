@@ -5,6 +5,7 @@ import {
 	MarvelClonLogo,
 	MineSweeperLogo,
 	StratsAppLogo,
+	EcommerceNextLogo,
 } from '@/components/projects'
 
 import { Technologies } from './technologies-data'
@@ -16,7 +17,7 @@ export const ProjectsData: Project[] = [
 		slug: 'ecommerce-next',
 		name: 'Ecommerce Next',
 		cardDescription: 'Ecommerce with Nextjs and PayPayl API',
-		logo: <FintechLogo />,
+		logo: <EcommerceNextLogo />,
 		images: [
 			'/assets/img-projects/ecommerce-next/Screenshot_1.png',
 			'/assets/img-projects/ecommerce-next/Screenshot_2.png',

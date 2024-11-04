@@ -58,3 +58,9 @@
 .minesweeper-bg {
 	fill: url(#card-icon-gradient);
 }
+
+/* Ecommerce Next */
+
+.card-icon-svg.ecommerce path {
+	stroke: url(#card-icon-gradient);
+}
