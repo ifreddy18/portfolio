@@ -7,6 +7,12 @@ export interface Technology {
 	isLibrary?: boolean
 }
 
+export interface Credentials {
+	user: string
+	password: string
+	type: 'user' | 'admin'
+}
+
 export interface Project {
 	date: Date
 	slug: string
@@ -14,6 +20,7 @@ export interface Project {
 	cardDescription: string
 	about?: string // Related to the product itself
 	description?: string // Related to tech description
+	credentials?: Credentials[]
 	logo: React.ReactNode
 	images: string[]
 	techStack: Technology[]

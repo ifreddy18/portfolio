@@ -86,24 +86,30 @@ export const Technologies: { [key: string]: Technology } = {
 	// 	web: '',
 	// 	logoPath: '',
 	// },
-	// next: {
-	// 	slug: 'next',
-	// 	name: 'NextJs',
-	// 	web: '',
-	// 	logoPath: '',
-	// },
+	next: {
+		slug: 'next',
+		name: 'NextJs',
+		web: '',
+		logoPath: '',
+	},
 	nodejs: {
 		slug: 'nodejs',
 		name: 'NodeJs',
 		web: '',
 		logoPath: '/assets/tech-logos/nodejs.svg',
 	},
-	// postgresql: {
-	// 	slug: 'postgresql',
-	// 	name: 'PostgreSQL',
-	// 	web: '',
-	// 	logoPath: '',
-	// },
+	postgresql: {
+		slug: 'postgresql',
+		name: 'PostgreSQL',
+		web: '',
+		logoPath: '',
+	},
+	prisma: {
+		slug: 'prisma',
+		name: 'Prisma',
+		web: '',
+		logoPath: '',
+	},
 	// reactnative: {
 	// 	slug: 'reactnative',
 	// 	name: 'React Native',
@@ -151,12 +157,12 @@ export const Technologies: { [key: string]: Technology } = {
 		web: '',
 		logoPath: '',
 	},
-	// zustand: {
-	// 	slug: 'zustand',
-	// 	name: 'Zustand',
-	// 	web: '',
-	// 	logoPath: '',
-	// },
+	zustand: {
+		slug: 'zustand',
+		name: 'Zustand',
+		web: '',
+		logoPath: '',
+	},
 }
 
 export const AllTechNames: string[] = Object.values(Technologies).map(

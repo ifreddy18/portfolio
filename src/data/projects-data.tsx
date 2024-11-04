@@ -10,6 +10,53 @@ import {
 import { Technologies } from './technologies-data'
 
 export const ProjectsData: Project[] = [
+	// Ecommerce Next
+	{
+		date: new Date('10-10-2024'),
+		slug: 'ecommerce-next',
+		name: 'Ecommerce Next',
+		cardDescription: 'Ecommerce with Nextjs and PayPayl API',
+		logo: <FintechLogo />,
+		images: [
+			'/assets/img-projects/ecommerce-next/Screenshot_1.png',
+			'/assets/img-projects/ecommerce-next/Screenshot_2.png',
+			'/assets/img-projects/ecommerce-next/Screenshot_3.png',
+			'/assets/img-projects/ecommerce-next/Screenshot_4.png',
+			'/assets/img-projects/ecommerce-next/Screenshot_5.png',
+			'/assets/img-projects/ecommerce-next/Screenshot_6.png',
+			'/assets/img-projects/ecommerce-next/Screenshot_7.png',
+			'/assets/img-projects/ecommerce-next/Screenshot_8.png',
+			'/assets/img-projects/ecommerce-next/Screenshot_9.png',
+			'/assets/img-projects/ecommerce-next/Screenshot_10.png',
+			'/assets/img-projects/ecommerce-next/Screenshot_11.png',
+			'/assets/img-projects/ecommerce-next/Screenshot_12.png',
+		],
+		techStack: [
+			Technologies['html'],
+			Technologies['css'],
+			Technologies['javascript'],
+			Technologies['typescript'],
+			Technologies['react'],
+			Technologies['next'],
+			Technologies['postgresql'],
+			Technologies['prisma'],
+			Technologies['zustand'],
+		],
+		urlLive: 'https://curso-next-fh-04-ecommerce-next.vercel.apps',
+		description: `E-commerce platform built with Next.js, offering seamless, fast, and responsive user experience. Features include dynamic product pages, secure authentication, optimized image handling, and a custom admin dashboard for inventory and order management. Designed for scalability and optimized for performance, delivering a smooth shopping experience on all devices.`,
+		credentials: [
+			{
+				user: 'freddy@mail.com',
+				password: '123456',
+				type: 'admin',
+			},
+			{
+				user: 'user@gmail.com',
+				password: '123456',
+				type: 'user',
+			},
+		],
+	},
 	// MineSweeper Master
 	{
 		date: new Date('05-31-2024'),

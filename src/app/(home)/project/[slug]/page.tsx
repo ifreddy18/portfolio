@@ -6,6 +6,15 @@ import { cn } from '@/lib/utils'
 import { ProjectsData } from '@/data'
 import { GrandientButton, ImageCarousel } from '@/components/ui'
 import { Badge } from '@/components/ui/badge'
+import {
+	Table,
+	TableBody,
+	TableCaption,
+	TableCell,
+	TableHead,
+	TableHeader,
+	TableRow,
+} from '@/components/ui/table'
 
 interface Props {
 	params: {
@@ -29,6 +38,7 @@ export default function ProjectPage({ params }: Readonly<Props>) {
 		urlLive,
 		urlStore,
 		date,
+		credentials,
 	} = project
 
 	return (
@@ -69,6 +79,32 @@ export default function ProjectPage({ params }: Readonly<Props>) {
 								className="mt-3 block"
 								dangerouslySetInnerHTML={{ __html: description }}
 							></p>
+						</>
+					)}
+
+					{credentials && credentials?.length > 0 && (
+						<>
+							<h2 className="mt-4 text-2xl">Test credentials</h2>
+							<Table className="">
+								<TableHeader>
+									<TableRow>
+										<TableHead className="">User</TableHead>
+										<TableHead>Password</TableHead>
+										<TableHead>Role/Type</TableHead>
+									</TableRow>
+								</TableHeader>
+								<TableBody>
+									{credentials.map((credential) => (
+										<TableRow key={credential.user}>
+											<TableCell className="font-medium">
+												{credential.user}
+											</TableCell>
+											<TableCell>{credential.password}</TableCell>
+											<TableCell>{credential.type}</TableCell>
+										</TableRow>
+									))}
+								</TableBody>
+							</Table>
 						</>
 					)}
 				</section>
